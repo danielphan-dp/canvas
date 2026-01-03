@@ -1,0 +1,44 @@
+{
+    "name": "Minimalist Note-Taking Workspace",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu24.04",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        },
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "yzhang.markdown-all-in-one",
+                "marp-team.marp-vscode",
+                "bierner.markdown-mermaid",
+                "bierner.markdown-preview-github-styles",
+                "pomdtr.excalidraw-editor",
+                "davidanson.vscode-markdownlint",
+                "shd101wyy.markdown-preview-enhanced",
+                "mushan.vscode-paste-image",
+                "streetsidesoftware.code-spell-checker",
+                "tomoki1207.pdf"
+            ],
+            "settings": {
+                "markdown.marp.html": "all",
+                "markdown.marp.themes": [],
+                "editor.wordWrap": "on",
+                "editor.minimap.enabled": false,
+                "files.autoSave": "afterDelay",
+                "files.autoSaveDelay": 1000,
+                "markdown.preview.breaks": true,
+                "[markdown]": {
+                    "editor.formatOnSave": true,
+                    "editor.quickSuggestions": {
+                        "other": true,
+                        "comments": false,
+                        "strings": false
+                    }
+                }
+            }
+        }
+    }
+}
